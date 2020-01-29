@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Carte interactive</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+                integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+                crossorigin=""/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/04d573739c.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+                integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+                crossorigin=""></script>
+    </head>
+
+    <body class="bg-light">
+        <header>
+                <nav class="navbar navbar-dark bg-dark justify-content-center">
+                    <p class="font-weight-bold h1 text-white">
+                        Velo'V 
+                    </p>
+                </nav>
+        </header>
+        <section class="container-fluid">
+            <div class="row justify-content-center p-3">
+                <p class="font-italic text-center mb-0 phrase-accroche">Réservez votre vélo n'importe où et à tous moments!</p>
+            </div>
+            <div class="row">
+                <div id="carousel"></div>
+            </div>
+            <div class="row">
+                <div class="mx-auto pb-3">
+                    <button class ="btn btn-outline-dark btn-sm mb-2 bg-white" id="pause">PAUSE</button>
+                    <button class ="btn btn-outline-dark btn-sm mb-2 bg-white" id="lecture">LECTURE</button>
+                </div>
+            </div>
+        </section>
+        <section id="map_reservation">
+            <div id="map_description_station">
+                <div id="mapid"></div>
+                <div id="description_station" class="bg-white text-center">
+                    <form id="bookingForm">
+                    </form>
+                </div>
+            </div>
+            <div id="currentBooking" class="bg-light m-0 text-center">
+            </div>
+        </section>
+
+        <footer class="p-3 bg-dark text-white">
+            <p class="text-center m-0 font-weight-light">
+                Ce site a été réalisé dans le cadre d'une formation OpenClassrooms. Il ne permet en aucun cas de faire des réservations. <br /> 
+                Pour réserver un vélo'V sur Lyon, c'est par <a href="https://velov.grandlyon.com/" class="font-italic text-info">ici</a>.
+            </p>
+        </footer>
+
+        <script src="js/jQuery/jquery-3.4.1.js"></script>
+        <script src="js/ajaxGet.js"></script>
+        <script src="js/classSigningCanvas.js"></script>
+        <script src="js/classChrono.js"></script>
+        <script src="js/classSlider.js"></script>
+        <script src="js/classStationReservation.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

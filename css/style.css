@@ -1,0 +1,154 @@
+@font-face { /* Installation de police */
+    font-family: 'blokletters';
+    src: url('fonts/Blokletters-Balpen-webfont.eot');
+    src: url('fonts/Blokletters-Balpen-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Blokletters-Balpen-webfont.woff') format('woff'),
+         url('fonts/Blokletters-Balpen-webfont.ttf') format('truetype'),
+         url('fonts/Blokletters-Balpen-webfont.svg#blokletters') format('svg');
+}
+
+#map_description_station {
+    width: 100%;
+    margin: auto;
+}
+
+#mapid {
+    margin: 0.5%;
+    border: solid #343a40 3px;
+    width: 99%;
+    border-radius: 50px;
+    height: 400px;
+}
+
+#description_station {
+    margin: 0.5%;
+    border: solid #343a40 3px;
+    width: 99%;
+    height: 520px;
+    border-radius: 50px;
+}
+
+#carousel {
+    position: relative;
+    margin: auto;
+}
+
+header {
+    height: 100px;
+}
+
+figure {
+    position: relative;
+    left: 9%;
+    width: 90%;
+}
+
+figcaption {
+    position: absolute;
+    left: 4%;
+    font-size: 10px;
+    width: 110px;
+    height: 30px;
+    top: 78%;
+    background-color: rgba(52, 58, 64, 0.8);
+    border-radius: 30px;
+    line-height: 30px;
+}
+
+.images {
+    max-width: 800px;
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+}
+
+#fleches {
+    position: absolute;
+    display: flex;
+    top: 40%;
+    z-index: 9;
+    width: 95%;
+    font-size: 20px;
+    justify-content: space-between;
+    left: 2%;
+}
+
+header {
+    height: 72px;
+}
+
+input {
+    border-radius: 10px;
+}
+
+.navbar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.h1 {
+    font-family: 'blokletters';
+}
+
+/* tablette */ @media screen and (min-width: 480px) {
+    #fleches {
+        font-size: 40px;
+    }
+
+    #mapid {
+        height: 500px;
+    }
+
+    figcaption {
+        width: 200px;
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+        top: 83%;
+    }
+}
+
+
+/* petit écran d'ordinateur */@media screen and (min-width: 1024px) {
+
+    #map_description_station {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #fleches {
+        font-size: 50px;
+    }
+
+    #mapid {
+        height: 600px;
+    }
+    
+    #description_station {
+        height: 600px;
+    }
+
+    .phrase-accroche {
+        font-size: 150%;
+    }
+
+    #lecture, #pause {
+        width: 140px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    figcaption {
+        top: 85%;
+    }
+}
+
+/* grand écran d'ordinateur */@media screen and (min-width: 1280px) {
+    figcaption {
+        width: 300px;
+        font-size: 30px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
